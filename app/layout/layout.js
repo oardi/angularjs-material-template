@@ -1,7 +1,12 @@
-function layoutCtrl(){
-    //var vm = this;
+function layoutCtrl($mdSidenav){
+    var vm = this;
 
     this.$onInit = function(){
+    }
+
+    vm.toggleNav = function(){
+        console.log("toggle");
+         $mdSidenav("left").toggle();
     }
 }
 
