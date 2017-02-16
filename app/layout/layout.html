@@ -3,22 +3,37 @@
         <md-button ng-click="$ctrl.toggleNav()" class="md-icon-button">
             <md-icon>menu</md-icon>
         </md-button>
-        <h2 flex md-truncate>Toolbar</h2>
+        <h2 flex md-truncate>App Title</h2>
     </div>
 </md-toolbar>
 
 <div flex layout="row">
-    <md-sidenav md-is-locked-open="$mdMedia('gt-md')" md-component-id="left">
 
-        <md-list>
-            <md-list-item>
-                <md-button>
-                    <!--<md-icon>android</md-icon>-->
-                    Menu Item
+    <!--md-is-locked-open="$mdMedia('gt-md')"-->
+
+    <md-sidenav md-component-id="left">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 flex md-truncate>Menu</h2>
+            </div>
+        </md-toolbar>
+
+        <md-content flex class="sidebar">
+            <md-menu-item flex layout="row">
+                <md-button ng-href="">
+                    <md-icon>menu</md-icon>
+                    Menu Item 1
                 </md-button>
-            </md-list-item>
-
-        </md-list>
+            </md-menu-item>
+            <md-divider></md-divider>
+            <md-menu-item flex layout="row">
+                <md-button ng-href="">
+                    <md-icon>menu</md-icon>
+                    Menu Item 2
+                </md-button>
+            </md-menu-item>
+            <md-divider></md-divider>
+        </md-content>
 
     </md-sidenav>
 
