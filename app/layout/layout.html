@@ -7,37 +7,29 @@
     </div>
 </md-toolbar>
 
-<div flex layout="row">
+<div flex layout="column">
 
     <!--md-is-locked-open="$mdMedia('gt-md')"-->
 
-    <md-sidenav md-component-id="left">
+    <md-sidenav md-component-id="left" layout="column">
         <md-toolbar>
             <div class="md-toolbar-tools">
                 <h2 flex md-truncate>Menu</h2>
             </div>
         </md-toolbar>
 
-        <md-content flex class="sidebar">
-            <md-menu-item flex layout="row">
-                <md-button ng-href="">
-                    <md-icon>menu</md-icon>
-                    Menu Item 1
+        <md-content>
+            <md-menu-item ng-repeat="item in $ctrl.menu">
+                <md-button ng-href="#!/{{item.link}}">
+                    <md-icon>{{item.icon}}</md-icon>
+                    {{item.title}}
                 </md-button>
             </md-menu-item>
-            <md-divider></md-divider>
-            <md-menu-item flex layout="row">
-                <md-button ng-href="">
-                    <md-icon>menu</md-icon>
-                    Menu Item 2
-                </md-button>
-            </md-menu-item>
-            <md-divider></md-divider>
         </md-content>
 
     </md-sidenav>
 
-    <md-content class="md-padding" flex id="content">
+    <md-content flex id="content">
 
         <ng-view></ng-view>
 

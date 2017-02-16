@@ -1,17 +1,20 @@
-function layoutCtrl($mdSidenav){
+function layoutCtrl($mdSidenav) {
     var vm = this;
 
-    this.$onInit = function(){
+    this.$onInit = function () {
     }
 
-    vm.toggleNav = function(){
-        console.log("toggle");
-         $mdSidenav("left").toggle();
+    vm.menu = [
+        { link: "home", title: "Home", icon: "home" },
+        { link: "settings", title: "Settings", icon: "settings" }
+    ];
+
+    vm.toggleNav = function () {
+        $mdSidenav("left").toggle();
     }
 }
 
 angular.module("app").component("layout", {
-    bindings:{},
     templateUrl: "app/layout/layout.html",
     controller: layoutCtrl
 });
