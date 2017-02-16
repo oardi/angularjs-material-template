@@ -5,36 +5,26 @@
     <title>AngularJs - Material</title>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="libs/angular-material/angular-material.min.css" rel="stylesheet" />
 </head>
 
 <body layout="column">
 
-
-    <!-- Container #1 (see wireframe) -->
-    <md-toolbar layout="row">
-        <h2>Angular Material - Starter App</h2>
-    </md-toolbar>
-
-    <!-- Container #2 -->
-    <div flex layout="row">
-
-        <!-- Container #3 -->
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2"></md-sidenav>
-
-        <!-- Container #4 -->
-        <md-content flex id="content"></md-content>
-
-    </div>
-
+    <layout></layout>
 
     <script src="libs/angular/angular.js"></script>
-    <script src="libs/angular-animate/angular-animate.min.js" type="text/javascript"></script>
-    <script src="libs/angular-aria/angular-aria.min.js" type="text/javascript"></script>
-    <script src="libs/angular-material/angular-material.min.js" type="text/javascript"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script src="libs/angular-animate/angular-animate.min.js"></script>
+    <script src="libs/angular-aria/angular-aria.min.js"></script>
+    <script src="libs/angular-material/angular-material.min.js"></script>
 
-    <script src="app/app.js" type="text/javascript"></script>
-    <script src="app/home/home.js" type="text/javascript"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app.routes.js"></script>
+
+    <script src="app/layout/layout.js"></script>
+    <script src="app/home/home.js"></script>
 
 </body>
 

@@ -1,0 +1,31 @@
+<md-toolbar layout="row">
+    <h3>Angular Material - Template</h3>
+</md-toolbar>
+
+
+<div flex layout="row">
+    <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">
+
+        <md-list>
+
+            <!-- List item #1 -->
+            <md-list-item>
+                <md-button>
+                    <md-icon>android</md-icon>
+                    Lia Luogo
+                </md-button>
+            </md-list-item>
+
+        </md-list>
+
+    </md-sidenav>
+
+    <md-content class="md-padding" flex id="content">
+        <h2>Lia Luogo</h2>
+        <p>
+            I love cheese...
+        </p>
+        <ng-view></ng-view>
+    </md-content>
+
+</div>
