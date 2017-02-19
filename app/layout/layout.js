@@ -1,8 +1,12 @@
-function layoutCtrl($mdSidenav) {
+function layoutCtrl($mdSidenav, $rootScope) {
     var vm = this;
 
     this.$onInit = function () {
     }
+
+    $rootScope.$on('$routeChangeStart', function(event) {
+		$mdSidenav("left").close();
+	});
 
     vm.menu = [
         { link: "home", title: "Home", icon: "home" },

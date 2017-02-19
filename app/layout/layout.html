@@ -7,32 +7,27 @@
     </div>
 </md-toolbar>
 
-<div flex layout="column">
 
-    <!--md-is-locked-open="$mdMedia('gt-md')"-->
+<md-sidenav md-component-id="left" layout="column">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 flex md-truncate>Menu</h2>
+        </div>
+    </md-toolbar>
 
-    <md-sidenav md-component-id="left" layout="column">
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <h2 flex md-truncate>Menu</h2>
-            </div>
-        </md-toolbar>
-
-        <md-content>
-            <md-menu-item ng-repeat="item in $ctrl.menu">
-                <md-button ng-href="#!/{{item.link}}">
-                    <md-icon>{{item.icon}}</md-icon>
-                    {{item.title}}
-                </md-button>
-            </md-menu-item>
-        </md-content>
-
-    </md-sidenav>
-
-    <md-content flex id="content">
-
-        <ng-view></ng-view>
-
+    <md-content>
+        <md-menu-item ng-repeat="item in $ctrl.menu">
+            <md-button ng-href="#!/{{item.link}}">
+                <md-icon>{{item.icon}}</md-icon>
+                {{item.title}}
+            </md-button>
+        </md-menu-item>
     </md-content>
 
-</div>
+</md-sidenav>
+
+<md-content flex id="content">
+
+    <ng-view></ng-view>
+
+</md-content>
