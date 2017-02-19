@@ -1,8 +1,16 @@
-function settingsCtrl() {
+function settingsCtrl($rootScope) {
     var vm = this;
 
+    //aus db
+    vm.themes = ["blue", "green"];
+    vm.theme = "blue";
+
     this.$onInit = function () {
-        console.info("init settings component");
+    }
+
+    vm.updateTheme = function () {
+        console.warn("update theme");
+        $rootScope.$broadcast("update-theme", vm.theme);
     }
 }
 
