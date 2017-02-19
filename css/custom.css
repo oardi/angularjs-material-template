@@ -1,4 +1,0 @@
-md-list-item .md-list-item-inner>div.md-primary>md-icon:not(.md-avatar-icon), md-list-item .md-list-item-inner>div.md-secondary>md-icon:not(.md-avatar-icon), md-list-item .md-list-item-inner>md-icon.md-secondary:not(.md-avatar-icon), md-list-item .md-list-item-inner>md-icon:first-child:not(.md-avatar-icon), md-list-item>div.md-primary>md-icon:not(.md-avatar-icon), md-list-item>div.md-secondary>md-icon:not(.md-avatar-icon), md-list-item>md-icon.md-secondary:not(.md-avatar-icon), md-list-item>md-icon:first-child:not(.md-avatar-icon) {
-        margin-top: 14px;
-    margin-bottom: 14px;
-}
