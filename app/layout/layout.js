@@ -13,7 +13,6 @@ function layoutCtrl($mdSidenav, $rootScope, $scope) {
         { link: "settings", title: "Settings", icon: "settings" }
     ];
 
-    //aus db
     vm.currentTheme = "blue";
     $scope.$on('update-theme', function (event, args) {
         vm.currentTheme = args;

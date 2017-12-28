@@ -1,7 +1,6 @@
 function settingsCtrl($rootScope) {
     var vm = this;
 
-    //aus db
     vm.themes = ["blue", "green"];
     vm.theme = "blue";
 

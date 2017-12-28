@@ -22,4 +22,6 @@ angular.module("app").config(['$compileProvider', function ($compileProvider) {
     $compileProvider.cssClassDirectivesEnabled(false);
 }]);
 
-angular.bootstrap(document, ["app"]);
+angular.element(document).ready(function () {
+    angular.bootstrap(document, ["app"]);
+});
