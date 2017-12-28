@@ -11,7 +11,3 @@ no module bundler, just plain javascript.
 * angular-aria
 * angular-material
 * material fonts 
-
-
-## Requirements
-* [AngularJs](https://angularjs.org/)
